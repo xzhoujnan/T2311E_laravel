@@ -1,4 +1,3 @@
-
 @extends("layout.layout")
 @section("title","About Us")
 @section("main")

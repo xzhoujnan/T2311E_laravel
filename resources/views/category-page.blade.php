@@ -1,10 +1,10 @@
 @extends("layout.layout")
 @section("title")
-    Home Page
+    {{$category["name"]}}
 @endsection
-@section("og-title","Home page")
 @section("main")
     <div class="container">
+        <h1> {{$category["name"]}}</h1>
         <div class="row">
             @foreach ($products as $item)
             <div class="col-3">

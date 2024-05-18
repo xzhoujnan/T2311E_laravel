@@ -1,4 +1,3 @@
-
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
 @php
     $categories = App\Models\Category::all()->toArray();
@@ -15,7 +14,7 @@
         </li>
         @foreach ($categories as $item)
         <li class="nav-item">
-          <a class="nav-link" href="#">{{$item["name"]}}</a>
+          <a class="nav-link" href="/category/{{$item["id"]}}">{{$item["name"]}}</a>
         </li>
         @endforeach
         

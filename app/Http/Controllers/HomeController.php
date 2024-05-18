@@ -23,5 +23,8 @@ class HomeController extends Controller
 }
 
 public function category($id){
-    $category = Category::findOrFail()
+    $category = Category::findOrFail($id);
+    $category = $category->toArray();
+    $product = Product::where("categry_id",$id)->get()->toArray();
+    return view("category-page",compact("cateogu","products"));
 }
