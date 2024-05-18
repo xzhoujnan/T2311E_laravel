@@ -1,4 +1,3 @@
-
 <?php
 
 namespace App\Http\Controllers;
@@ -21,4 +20,8 @@ class HomeController extends Controller
     public function about_us(){
         return view("about-us");
     }
+}
+
+public function category($id){
+    $category = Category::findOrFail()
 }
